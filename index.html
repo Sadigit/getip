@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 id="top-up">Get IP</h1>
+	<div class="top-mid">
+		<h1>Your Current Ip is : </h1>
+		<h2 id="ip"></h2>
+	</div>
+
+</body>
+<script type="text/javascript">
+	
+	fetch("https://api.ipify.org/?format=json").then((res)=>{
+		console.log(res);
+		return res.json();
+
+	}).then((data)=>{
+			const ip = data.ip;
+			const put = document.querySelector('#ip').innerHTML= ip;
+			console.log(ip);
+		})
+</script>
+</html>
