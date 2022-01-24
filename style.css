@@ -3,7 +3,8 @@
 	padding: 0;
 }
 body{
-	background: rgb(210, 210, 255);
+	background: lightblue;
+	overflow: hidden;
 }
 #top-up{
 	text-align: center;
@@ -15,8 +16,12 @@ body{
 
 
 }
+.top-mid img{
+	width: 100%;
+}
 .top-mid{
 	text-align: center;
+
 	font-size: 30px;
 	color: rgb(18,18,18);
 	font-family: sans-serif;
@@ -28,12 +33,13 @@ body{
 #ip{
 	margin-top: 9px;
 	text-shadow: 6px 4px rgba(0, 0, 0, 0.30);
+	font-size: 99%;
 
 
 }
 h2{
-	background: linear-gradient(to top,rgba(255, 255, 255, 0.21),rgba(255, 255, 255, 0.30));
-	border: 1px solid transparent;
+	background: linear-gradient(to top,lightblue,lightblue);
+	border: 1px lightblue;
 	border-radius: 18px;
 
 }
